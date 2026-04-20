@@ -21,6 +21,13 @@ A collection of Bash scripts built while learning DevOps engineering, focusing o
 - Uses command substitution `$()`
 - Includes process monitoring (`ps`, `df`, `free`)
 
+###🔹file_checker.sh
+- Takes a filename as command line argument (`$1`)
+- Validates if argument was provided
+- Checks if file exists using `-f` flag
+- Displays line count, word count and character count
+- Proper exit codes for error handling
+
 ## 🚀 Skills Gained
 - Bash scripting for DevOps automation
 - Input validation and error handling
@@ -32,7 +39,3 @@ A collection of Bash scripts built while learning DevOps engineering, focusing o
 - Linux (RHEL / Ubuntu)
 - Git & GitHub
 
-## 📌 Future Improvements
-- Add alert system for CPU/Disk usage
-- Log outputs to files
-- Automate execution using cron jobs
