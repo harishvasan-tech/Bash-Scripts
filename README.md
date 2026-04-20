@@ -21,7 +21,7 @@ A collection of Bash scripts built while learning DevOps engineering, focusing o
 - Uses command substitution `$()`
 - Includes process monitoring (`ps`, `df`, `free`)
 
-###🔹file_checker.sh
+### 🔹 file_checker.sh
 - Takes a filename as command line argument (`$1`)
 - Validates if argument was provided
 - Checks if file exists using `-f` flag
