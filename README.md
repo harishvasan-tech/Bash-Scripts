@@ -28,6 +28,15 @@ A collection of Bash scripts built while learning DevOps engineering, focusing o
 - Displays line count, word count and character count
 - Proper exit codes for error handling
 
+### 🔹  backup.sh
+- Takes a directory as argument
+- Creates compressed `.tar.gz` backup
+- Saves to dedicated `~/backups` directory
+- Timestamps backup filename automatically
+- Logs every backup with timestamp to `backup.log`
+- Backup rotation — auto deletes backups older than 7 days
+- Scheduled via cron to run daily at 2am
+
 ## 🚀 Skills Gained
 - Bash scripting for DevOps automation
 - Input validation and error handling
