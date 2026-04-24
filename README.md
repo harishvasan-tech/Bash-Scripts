@@ -29,22 +29,42 @@ A collection of Bash scripts built while learning DevOps engineering, focusing o
 - Proper exit codes for error handling
 
 ### 🔹  backup.sh
-- Takes a directory as argument
+- Takes a directory as argument (`$1`)
+- Validates if directory exists
 - Creates compressed `.tar.gz` backup
 - Saves to dedicated `~/backups` directory
-- Timestamps backup filename automatically
+- Timestamps every backup automatically (`backup_YYYY-MM-DD.tar.gz`)
 - Logs every backup with timestamp to `backup.log`
-- Backup rotation — auto deletes backups older than 7 days
-- Scheduled via cron to run daily at 2am
+- Backup rotation — auto deletes backups older than 7 days using `find`
+- Scheduled via cron to run automatically every day
+- Cron output logged separately to `cron.log`
 
-## 🚀 Skills Gained
+## Concepts Covered
+- Variables and user input
+- Conditionals and exit codes
+- Input validation using regex
+- Command substitution `$()`
+- Arguments (`$1`, `$2`)
+- File and directory checks
+- `awk` for parsing command output
+- `tar` for compression
+- `find` for file management
+- `wc` for counting lines, words, characters
+- Logging with timestamps
+- Cron job scheduling
+- Error handling with `set -euo pipefail`
+
+## What I'm Learning
 - Bash scripting for DevOps automation
 - Input validation and error handling
-- Writing reusable scripts
-- System monitoring and troubleshooting
+- System monitoring scripts
+- Automated backups and logging
+- Cron job scheduling
+- File and directory management
 
-## 🧰 Tools & Environment
+## Tools
 - Bash
-- Linux (RHEL / Ubuntu)
-- Git & GitHub
+- Linux (RHEL/Ubuntu)
+- Cron
+- tar, find, awk, wc, grep
 
